@@ -1,0 +1,40 @@
+
+
+Discussion Questions: SQL
+061020
+Table 3
+
+
+1 . When you tweet a tweet, your tweet is available to THE WHOLE INTERNET FOREVER. Why doesn't your tweet disappear after you post it? How does it stay on Twitter and stay associated to ​your​ account? 
+
+-> When you tweet a tweet, it persists on the internet because it is stored on a harddrive in a server somewhere. Within that hard drive is a framework referred to as a database 
+to organize that data.
+
+
+
+2 . When you enter your debit card into an ATM, how is your account identified? How does the bank associate that card number to your account? How does your bank store your account information? Do you think your address and phone number are stored the same way as your account number and how much money you have?
+
+-> Your bank recognizes your debit card belong to you likely because you account number is an identifier that signals which table in a database is storing your data. This is a use case for relational databases. These databases are again store within software on a harddrive in a server. The table that is linked to your unique identifier likely as all other information regarding your account and contact on it as well as all that is accounted for in the formation of your account.
+
+
+
+
+
+3 . How does Tinder know you are who you say you are when you open your application, type your password, and begin to swipe insatiably? How does it know that you and your latest match swiped right on each other, and that is wasn't someone other John/Jane/J. Doe?
+
+-> Tinder knows who I am based on my login information, likely my email is associated with a unique identifier, which is why you can't create a new account with the same email (don't ask how I know that). Ultimately, the computer only knows that a login is used and that that login is unique and thus queries a unique table for that user. You don't know whose ultimtely doing the swiping.
+
+
+
+
+4 . How do you think Yelp can show you all Latin Restaurants, with a $$ price rating, in the Financial District, which have higher than a 3 star rating?
+
+-> Relational databases allow unique tables to be linked based on similar data aggregates. I.E. if two unique restaurants are uniquely associated x & y their cuisines may be associated using Foreign keys.
+
+
+5 . Translate this into your own words:
+
+SELECT * FROM artists WHERE ArtistName='Kid Cudi'
+Define "Persistence" in programming. Does the @@all class variable we have been using in our code meet all the criteria for "persistence".
+
+-> Select all artists that are named Kid Cudi. Persistance means means something persists (sticks around on a harddrive). The @@all class doesn't persist because Ruby isn't a a database framework so it doesn't get stored on a harddrive.
