@@ -1,0 +1,301 @@
+Last login: Thu Jun  4 07:58:54 on ttys000
+[oh-my-zsh] Insecure completion-dependent directories detected:
+drwxrwxr-x  7 bearinawolfpack  admin  224 Jun  2 20:29 /usr/local/share/zsh
+drwxrwxr-x  5 bearinawolfpack  admin  160 May 28 11:02 /usr/local/share/zsh/site-functions
+
+[oh-my-zsh] For safety, we will not load completions from these directories until
+[oh-my-zsh] you fix their permissions and ownership and restart zsh.
+[oh-my-zsh] See the above list for directories with group or other writability.
+
+[oh-my-zsh] To fix your permissions you can do so by disabling
+[oh-my-zsh] the write permission of "group" and "others" and making sure that the
+[oh-my-zsh] owner of these directories is either root or your current user.
+[oh-my-zsh] The following command may help:
+[oh-my-zsh]     compaudit | xargs chmod g-w,o-w
+
+[oh-my-zsh] If the above didn't help or you want to skip the verification of
+[oh-my-zsh] insecure directories you can set the variable ZSH_DISABLE_COMPFIX to
+[oh-my-zsh] "true" before oh-my-zsh is sourced in your zshrc file.
+
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  clear
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  irb
+2.6.1 :001 > exit
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  clear
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  irb
+2.6.1 :001 >  class FunnyBots
+2.6.1 :002?>
+2.6.1 :003?>       attr_accessor :name, :quotes
+2.6.1 :004?>
+2.6.1 :005?>       @@bots = []
+2.6.1 :006?>
+2.6.1 :007?>       def initialize(name, quotes)
+2.6.1 :008?>           @name = name
+2.6.1 :009?>           @quotes = quotes
+2.6.1 :010?>           @@bots << self
+2.6.1 :011?>         end
+2.6.1 :012?>
+2.6.1 :013?>      def random_quote
+2.6.1 :014?>           self.quotes.sample
+2.6.1 :015?>         end
+2.6.1 :016?>
+2.6.1 :017?>       def self.bots
+2.6.1 :018?>           @@bots
+2.6.1 :019?>         end
+2.6.1 :020?>
+2.6.1 :021?>   end
+ => :bots
+2.6.1 :022 >
+ => nil
+2.6.1 :023 >   archer = FunnyBots.new("Archer", ["Q: How did the programmer die in the shower? A:He read the shampoo bottle instructions: Lather. Rinse. Repeat. ", "A UI is like a joke. If you have to explain it, it's not good.", "Q: How many programmers does it take to change a light bulb? A: None – It’s a hardware problem"] )
+ => #<FunnyBots:0x00007fe1c30a2a88 @name="Archer", @quotes=["Q: How did the programmer die in the shower? A:He read the shampoo bottle instructions: Lather. Rinse. Repeat. ", "A UI is like a joke. If you have to explain it, it's not good.", "Q: How many programmers does it take to change a light bulb? A: None – It’s a hardware problem"]>
+2.6.1 :024 > @@bots.method
+(irb):24: warning: class variable access from toplevel
+Traceback (most recent call last):
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):24
+NameError (uninitialized class variable @@bots in Object)
+2.6.1 :025 > @@bots.methods
+(irb):25: warning: class variable access from toplevel
+Traceback (most recent call last):
+        5: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):25
+        1: from (irb):25:in `rescue in irb_binding'
+NameError (uninitialized class variable @@bots in Object)
+2.6.1 :026 > archer.bots
+Traceback (most recent call last):
+        5: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):26
+        1: from (irb):26:in `rescue in irb_binding'
+NoMethodError (undefined method `bots' for #<FunnyBots:0x00007fe1c30a2a88>)
+2.6.1 :027 > cleaer
+Traceback (most recent call last):
+        5: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):27
+        1: from (irb):27:in `rescue in irb_binding'
+NameError (undefined local variable or method `cleaer' for main:Object)
+Did you mean?  caller
+2.6.1 :028 > clear
+Traceback (most recent call last):
+        5: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):28
+        1: from (irb):28:in `rescue in irb_binding'
+NameError (undefined local variable or method `clear' for main:Object)
+2.6.1 :029 > Exit
+Traceback (most recent call last):
+        5: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):29
+        1: from (irb):29:in `rescue in irb_binding'
+NameError (uninitialized constant Exit)
+2.6.1 :030 > ^C
+2.6.1 :030 >
+[1]  + 18800 suspended  irb
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  clear                                                                       146 ↵
+╭─bearinawolfpack@MacBook-Pro.fios-router.home ~ ‹ruby-2.6.1› ‹master*›
+╰─➤  irb
+2.6.1 :001 > class Bicycle
+2.6.1 :002?>
+2.6.1 :003?>     attr_reader :tire
+2.6.1 :004?>
+2.6.1 :005?>       def initialize(tire, gears, style)
+2.6.1 :006?>           @tire = tire
+2.6.1 :007?>           @gears = gears
+2.6.1 :008?>           @style = style
+2.6.1 :009?>         end
+2.6.1 :010?>
+2.6.1 :011?>       def tire_size
+2.6.1 :012?>           self.tire
+2.6.1 :013?>         end
+2.6.1 :014?>
+2.6.1 :015?>       def self.gears
+2.6.1 :016?>           @gears
+2.6.1 :017?>         end
+2.6.1 :018?>
+2.6.1 :019?>   end
+ => :gears
+2.6.1 :020 >
+ => nil
+2.6.1 :021 > mongoose = Bicycle.new(4, 10, "BMX")
+ => #<Bicycle:0x00007ffaae85f1c8 @tire=4, @gears=10, @style="BMX">
+2.6.1 :022 > mongoose.tire_size
+ => 4
+2.6.1 :023 > mongoose.tire_size = 5
+Traceback (most recent call last):
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):23
+NoMethodError (undefined method `tire_size=' for #<Bicycle:0x00007ffaae85f1c8 @tire=4, @gears=10, @style="BMX">)
+Did you mean?  tire_size
+2.6.1 :024 > class Bicycle
+2.6.1 :025?>
+2.6.1 :026?>     attr_reader :tire
+2.6.1 :027?>
+2.6.1 :028?>       def initialize(tire, gears, style)
+2.6.1 :029?>           @tire = tire
+2.6.1 :030?>           @gears = gears
+2.6.1 :031?>           @style = style
+2.6.1 :032?>         end
+2.6.1 :033?>
+2.6.1 :034?>       def tire_size
+2.6.1 :035?>           self.tire
+2.6.1 :036?>         end
+2.6.1 :037?>
+2.6.1 :038?>       def self.gears
+2.6.1 :039?>           @gears
+2.6.1 :040?>         end
+2.6.1 :041?>
+2.6.1 :042?>   end
+ => :gears
+2.6.1 :043 >
+ => nil
+2.6.1 :044 >  class Bicycle
+2.6.1 :045?>   attr_accessor :tire
+2.6.1 :046?>   end
+ => nil
+2.6.1 :047 > mongoose.tire_size = 5
+Traceback (most recent call last):
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):47
+NoMethodError (undefined method `tire_size=' for #<Bicycle:0x00007ffaae85f1c8 @tire=4, @gears=10, @style="BMX">)
+Did you mean?  tire_size
+2.6.1 :048 > class Bicycle
+2.6.1 :049?>   def tire_size=(size)
+2.6.1 :050?>     self.tire = size
+2.6.1 :051?>     end
+2.6.1 :052?>   end
+ => :tire_size=
+2.6.1 :053 > mongoose.tire_size = 5
+ => 5
+2.6.1 :054 > class Bicycle
+2.6.1 :055?>   def gears
+2.6.1 :056?>     @gears
+2.6.1 :057?>     end
+2.6.1 :058?>   end
+ => :gears
+2.6.1 :059 > mongoose.gears
+ => 10
+2.6.1 :060 > Bicycle.bikes
+Traceback (most recent call last):
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):60
+NoMethodError (undefined method `bikes' for Bicycle:Class)
+2.6.1 :061 > class Bicycle
+2.6.1 :062?>   @@all = []
+2.6.1 :063?>   def initialize(tire, gears, style)
+2.6.1 :064?>           @tire = tire
+2.6.1 :065?>           @gears = gears
+2.6.1 :066?>           @style = style
+2.6.1 :067?>     @@all << self
+2.6.1 :068?>     end
+2.6.1 :069?>   def bike
+2.6.1 :070?>     end
+2.6.1 :071?>   end
+ => :bike
+2.6.1 :072 > class Bicycle
+2.6.1 :073?>   def self.bikes
+2.6.1 :074?>     @@all
+2.6.1 :075?>     end
+2.6.1 :076?>   end
+ => :bikes
+2.6.1 :077 > Bicycle.bikes
+ => []
+2.6.1 :078 > mongoose = Bicycle.new(4, 10, "BMX")
+ => #<Bicycle:0x00007ffab30c13a8 @tire=4, @gears=10, @style="BMX">
+2.6.1 :079 > Bicycle.bikes
+ => [#<Bicycle:0x00007ffab30c13a8 @tire=4, @gears=10, @style="BMX">]
+2.6.1 :080 > schwinn = Bicycle.new(4, 10, "BMX")
+ => #<Bicycle:0x00007ffab00219c8 @tire=4, @gears=10, @style="BMX">
+2.6.1 :081 > Bicycle.bikes
+ => [#<Bicycle:0x00007ffab30c13a8 @tire=4, @gears=10, @style="BMX">, #<Bicycle:0x00007ffab00219c8 @tire=4, @gears=10, @style="BMX">]
+2.6.1 :082 > Bicycle.styles
+Traceback (most recent call last):
+        4: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/bearinawolfpack/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):82
+NoMethodError (undefined method `styles' for Bicycle:Class)
+2.6.1 :083 > class Bicycle
+2.6.1 :084?>   def self.styles
+2.6.1 :085?>     @style
+2.6.1 :086?>     end
+2.6.1 :087?>   end
+ => :styles
+2.6.1 :088 > Bicycle.styles
+ => nil
+2.6.1 :089 > mongoose = Bicycle.new(4, 10, "BMX")
+ => #<Bicycle:0x00007ffab08c99e0 @tire=4, @gears=10, @style="BMX">
+2.6.1 :090 > Bicycle.styles
+ => nil
+2.6.1 :091 > class Bicycles
+2.6.1 :092?>   def self.styles
+2.6.1 :093?>     end
+2.6.1 :094?>   end
+ => :styles
+2.6.1 :095 > class Bicycle
+2.6.1 :096?>   attr_reader :tire, :style
+2.6.1 :097?>   def self.styles
+2.6.1 :098?>     @@all.map{|bike| bike.style}
+2.6.1 :099?>     end
+2.6.1 :100?>   end
+ => :styles
+2.6.1 :101 > Bicycle.styles
+ => ["BMX", "BMX", "BMX"]
+2.6.1 :102 >
+
+
+
+
+
+
+
+
+
+bicycles.rb
+
+
+Class Bicycles
+        attr_accessor :tire
+        attr_reader :style, :gears
+        @@all = []
+        def initialize(tire, gears, style)
+                @tire = tire
+                @gears = gears
+                @style = style
+                @@all << self
+        end
+        def tire_size
+                self.tire
+        end
+        def tire_size=(size)
+                self.tire=size
+        end
+        def self.bikes
+                @@all
+        end
+        def self.styles
+                @@all.map { |bike|
+                        bike.style
+                }
+        end
+end

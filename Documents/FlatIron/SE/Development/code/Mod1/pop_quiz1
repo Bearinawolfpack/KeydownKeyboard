@@ -1,0 +1,23 @@
+What are the two types of associations/relationships that we discussed yesterday? 
+
+One to Many 
+require_related (run file)
+
+
+How do we build that relationship into our code? 
+
+One to Many says that one class (owner) has many relationships (toys) and that 
+each of those instances know their one owner upon initialization that way the owner does not need. 
+
+Require_related seperates files that hold classes and is a seperate file that 
+classes are linked to that way classes can be added in the future and be easily 
+debugged.
+
+
+Which model holds the reference in a has many/belongs to association? Why?
+
+I'm not sure exactly what this is asking but I believe it's that one instance 
+knows it's owner upon initialization but the owner does not track each of it's 
+peers. This also enables a single-source or truth in that @@all will be able 
+to track each peer instance per peer class and the owner can reference that 
+source.

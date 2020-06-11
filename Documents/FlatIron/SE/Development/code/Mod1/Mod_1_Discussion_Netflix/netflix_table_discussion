@@ -1,0 +1,34 @@
+1 . What would a Users table look like? What columns do you think would be in the table?
+
+PRIMARY ID INTEGER
+NAME TEXT
+EMAIL TEXT
+USERNAME TEXT
+PHONE # TEXT
+PROFILE 1..x TEXT
+PASSWORD TEXT
+
+
+
+
+2 . As a user you should be able to look at a list of movies and select any individual movies to add to your Queue. How would you model the relationship between a User and their Queue of Movies? What kind of properties would a Queue have? What kind of relationships would a Queue have with other tables? Be sure to be very clear about on which table(s) the foreign keys are found. Be sure your domain allows the same Movie to appear on many different user's queues
+
+There are many users and many movies.
+A user would interact with a joiner table to keep track of each movie's foreign key and each user's foreign key. 
+
+
+
+
+
+
+3 . A Movie has a plot, title, rating, duration, actors/actresses, and reviews. How would you model each of these relationships with a Movie? What would would you call the relationship between an Actor and a Movie?
+
+A movie has unique actor/esses title, rating, etc. and actors et. have many movies.
+A movie Belongs to each of those things.
+
+
+
+
+4 . As a user you should be able to leave a Review on a Movie. Would a Review be a property of a User or its own table? Why? If a Reviewer does not have a direct relationship to a Movie, how can a Movie list the names of its Reviewers? What would you call this relationship?
+
+Reviews would have their own unique table and the user would have their foreign key on that table associated with a foreign movie key. A movie will have many review and a user will have many reviews. Movies have users through reviews. The name of each user will be associated with a foreign key on the review joiner table and that foreign key will be associated with the corresponding movie foreign key on said table so the movie has access to the users review through the review table.

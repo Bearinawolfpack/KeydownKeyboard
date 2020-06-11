@@ -1,0 +1,32 @@
+How does this relate to Programming?
+
+Programming is about experimenting or performing tests to prove a hypothesis.
+It's important that we don't assume that everything will work exactly how we 
+expect it to as that is likely how to problem can or will occur.
+
+
+Why is it important for a Developer to master the Scientific Method?
+
+It ensures that every piece you are using trying to solve a puzzle is 
+doing exactly what you expect it to. In other words, having a process
+prevents assumptions used in coming up with an expected result (hypothesis). 
+
+
+Which step(s) of the method should you work on alone?
+
+Test with an experiment / Troubleshoot procedure, carefully checking
+all steps and set-up.
+
+
+Which step(s) of the method should you work on with a peer/colleague?
+
+If I cannot come up with a means to troubleshoort a procedure, I would
+ask a colleague what they would do.
+
+
+Which step(s) of the method should you ask an instructor for help?
+
+If I cannot find a means of troubleshooting anywhere else, I'd ask an 
+instructor how I could come up with a test. I'd also ask an instructor if 
+my results do not align with my Hypothesis. I might need to think about the 
+problem differently.
